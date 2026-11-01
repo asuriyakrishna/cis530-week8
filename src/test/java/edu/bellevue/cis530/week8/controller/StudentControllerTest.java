@@ -158,28 +158,4 @@ class StudentControllerTest {
 
         verify(studentService).deleteStudent(10L);
     }
-
-    private Student buildStudent(Long id, String firstName, String lastName, String email, String major,
-                               BigDecimal gpa, Integer enrollmentYear, String phone, String address) {
-        Student student = new Student();
-        student.setId(id);
-        student.setFirstName(firstName);
-        student.setLastName(lastName);
-        student.setEmail(email);
-        student.setMajor(major);
-        student.setGpa(gpa);
-        student.setEnrollmentYear(enrollmentYear);
-
-        StudentProfile profile = new StudentProfile();
-        profile.setId(id + 100L);
-        profile.setPhone(phone);
-        profile.setAddress(address);
-        profile.setCity("Seattle");
-        profile.setState("WA");
-        profile.setZip("98101");
-        profile.setEmergencyContactName("Parent");
-        profile.setEmergencyContactPhone("5550001111");
-        student.setProfile(profile);
-        return student;
-    }
 }
