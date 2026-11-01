@@ -3,7 +3,6 @@ package edu.bellevue.cis530.week8.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import edu.bellevue.cis530.week8.entity.Student;
-import edu.bellevue.cis530.week8.entity.StudentProfile;
 import edu.bellevue.cis530.week8.service.StudentService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
